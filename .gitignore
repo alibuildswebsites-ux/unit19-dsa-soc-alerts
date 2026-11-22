@@ -1,0 +1,18 @@
+# Python bytecode and test caches
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local environments and build-only dependencies
+.venv/
+.deps/
+.lo-profile/
+
+# Generated project archives (source files and deliverables are tracked directly)
+*.zip
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

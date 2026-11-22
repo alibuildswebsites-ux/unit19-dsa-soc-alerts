@@ -1,0 +1,3 @@
+VPS Python 3.12.3
+Command: python3 -m compileall -q src tests benchmarks docs diagrams
+Result: exit code 0 (passed)

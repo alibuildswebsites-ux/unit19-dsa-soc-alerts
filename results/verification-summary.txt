@@ -1,0 +1,14 @@
+VPS environment: Python 3.12.3
+Compilation: python3 -m compileall -q src tests benchmarks docs diagrams (passed)
+VPS full pytest run 1: 24 passed in 0.04s
+VPS full pytest run 2: 24 passed in 0.03s
+VPS full pytest run 3: 24 passed in 0.04s
+Demo execution: passed; see results/demo-output-final.txt
+Benchmark execution: passed; see results/benchmark-results.json and CSV files
+DOCX: 5,149 main-body words, 7 embedded figures; 19-page DOCX render and 16-page final PDF render inspected
+PDF: 16 rendered pages; visual QA contact sheet saved under screenshots/report-pdf/
+PPTX: 14 slides, all 14 with speaker notes; 14-slide render inspected under screenshots/slides-render/
+Independent local-container verification: Python 3.13.5, 24 tests passed twice, compileall passed, demo passed; see results/local-test-log.txt
+TDD RED evidence: initial tests were written first but the recorded RED run failed during pytest collection because production modules were not yet present (import errors), not as assertion failures. This limitation is documented rather than described as a clean assertion-level RED cycle.
+Evidence note: saved screenshots are rendered report/PDF and slide previews. Compilation, execution and test evidence is also retained as real command logs; no terminal-window screenshots were captured.
+Remaining user action: replace student name, student ID, tutor name and assignment title placeholders before submission.

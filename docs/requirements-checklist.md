@@ -1,0 +1,88 @@
+# Unit 19 DSA - Requirements and Evidence Checklist
+
+Source of truth: Pearson Unit 19 Data Structures & Algorithms assignment brief, supplied DOCX (7 pages). Checked against pages 1-7, including the assessment-criteria grid on pages 6-7.
+
+## Administrative and submission requirements
+- [x] Two primary deliverables: written technical report (DOCX and PDF copy) and PowerPoint presentation.
+- [x] Report body 4,000-5,500 words; count and method documented.
+- [x] Harvard in-text citations and reference list; all sources real and bibliographically checked.
+- [x] Academic language and individual voice; structured headings.
+- [x] Placeholders for student name/ID, tutor, assignment title.
+- [x] Appendices include commented source, real compile/run/test evidence and diagrams, with references from body.
+- [x] Slides cover problem, design/data flow, decisions, structures/algorithms, code, Big-O, evaluation, conclusion/recommendations.
+
+## Learning outcomes
+- [x] LO1 examine data types, concrete data structures and algorithms.
+- [x] LO2 specify ADTs and algorithms in formal notation.
+- [x] LO3 implement complex structures and algorithms.
+- [x] LO4 assess effectiveness of structures and algorithms.
+
+## Task 1 - Analysis and selection (brief pp. 3-4)
+- [x] Arrays: purpose, structure, operations, strengths, limitations, use cases.
+- [x] Linked lists: purpose, structure, operations, strengths, limitations, use cases.
+- [x] Stacks: purpose, structure, operations, strengths, limitations, use cases.
+- [x] Queues: purpose, structure, operations, strengths, limitations, use cases.
+- [x] Demonstrate FIFO and LIFO.
+- [x] Identify storage/retrieval optimisation opportunities.
+- [x] Include short snippets with outputs where useful.
+
+## Task 2 - Design and conceptual understanding (brief p. 3)
+- [x] Explain event flow and selected structures.
+- [x] Explain ID, status and timestamp storage/access/update.
+- [x] Explain interactions among ADTs and structures.
+- [x] Explain information hiding and encapsulation.
+- [x] Include a labelled UML class diagram.
+- [x] Give a formal imperative ADT specification with operations, preconditions and postconditions.
+
+## Task 3 - Implementation, testing and analysis (brief p. 4)
+- [x] Explain ADT implementation logic.
+- [x] Include key code snippets, explanations and matching real outputs.
+- [x] Explain error handling and its importance.
+- [x] Give time and space Big-O for every implemented algorithm.
+- [x] Append complete source files with proper names and comments.
+- [x] Real command logs for compilation, execution and tests are included.
+- [ ] Terminal-window screenshots of compilation, execution and tests were not captured; screenshots currently document rendered report pages and slides.
+- [x] Demonstrate validation, empty operations, duplicate IDs, capacity overflow, severity validation, priority timestamp tie-breaking and stability.
+
+## Task 4 - Efficiency evaluation (brief p. 4)
+- [x] Evaluate time and storage complexity.
+- [x] Use at least two efficiency-measurement methods.
+- [x] Compare alternatives and justify chosen structures.
+- [x] Explain benefits in the SOC context.
+- [x] Include real empirical results and charts; distinguish measured facts from theoretical expectations.
+
+## Assessment criteria visible in the Pearson grid (brief pp. 6-7)
+### LO1
+- [x] P1 design specification for data structures and valid operations.
+- [x] P2 determine memory-stack operations and how a computer uses a stack for function calls.
+- [x] M1 illustrate a concrete FIFO structure with an example.
+- [x] M2 compare performance of two sorting algorithms.
+- [x] D1 analyse two network shortest-path algorithms, with an example of each.
+### LO2
+- [x] P3 imperatively specify a software stack ADT.
+- [x] M3 examine encapsulation and information hiding advantages.
+- [x] D2 discuss whether imperative ADTs form a basis for object orientation, justify a position.
+### LO3
+- [x] P4 implement a complex ADT/algorithm in an executable language for the problem.
+- [x] P5 implement error handling and report test results.
+- [x] M4 demonstrate how the ADT/algorithm implementation solves the defined problem.
+- [x] D3 critically evaluate complexity of an implemented ADT/algorithm.
+### LO4
+- [x] P6 discuss asymptotic analysis as an effectiveness measure.
+- [x] P7 determine two efficiency-measurement methods and illustrate with examples.
+- [x] M5 interpret a trade-off when specifying an ADT, with an example.
+- [x] D4 evaluate three benefits of implementation-independent data structures.
+
+## Evidence and verification gates
+- [~] Test-first record: tests were written before production modules; the initial RED run failed during collection with missing-module import errors, not assertion-level failures. See results/tdd-red.txt and verification-summary.txt.
+- [x] Full pytest suite passes locally.
+- [x] Full pytest suite passes independently on VPS.
+- [x] Benchmark output is generated by the delivered code and saved verbatim.
+- [x] At least two empirical comparisons plus asymptotic reasoning.
+- [~] Main demo and algorithm outputs re-run and cross-checked; individual illustrative snippets were reviewed against their stated operations and output, but not all were separately automated as a single snippet test.
+- [x] Figures numbered/captioned and referenced in report.
+- [x] Appendices individually referenced in report.
+- [x] DOCX rendered page-by-page; contact sheet and individual page PNGs saved for visual inspection.
+- [x] PDF rendered and visually inspected.
+- [x] PPTX rendered slide-by-slide and visually inspected.
+- [x] Requirement checklist reviewed twice; outstanding gaps recorded honestly (student identity fields remain placeholders; terminal screenshots not captured; initial RED was collection failure).

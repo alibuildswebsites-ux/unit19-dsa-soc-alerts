@@ -1,0 +1,38 @@
+
+==================================== ERRORS ====================================
+__________________ ERROR collecting tests/test_algorithms.py ___________________
+ImportError while importing test module '/root/Desktop/Unit19_DSA_SOC_Alerts/tests/test_algorithms.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_algorithms.py:5: in <module>
+    from soc_alerts.graph_algorithms import NegativeCycleError, dijkstra, bellman_ford
+E   ModuleNotFoundError: No module named 'soc_alerts.graph_algorithms'
+____________________ ERROR collecting tests/test_manager.py ____________________
+ImportError while importing test module '/root/Desktop/Unit19_DSA_SOC_Alerts/tests/test_manager.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_manager.py:5: in <module>
+    from soc_alerts.manager import (
+E   ModuleNotFoundError: No module named 'soc_alerts.manager'
+__________________ ERROR collecting tests/test_structures.py ___________________
+ImportError while importing test module '/root/Desktop/Unit19_DSA_SOC_Alerts/tests/test_structures.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_structures.py:5: in <module>
+    from soc_alerts.models import Alert, Severity
+E   ModuleNotFoundError: No module named 'soc_alerts.models'
+=========================== short test summary info ============================
+ERROR tests/test_algorithms.py
+ERROR tests/test_manager.py
+ERROR tests/test_structures.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+3 errors in 0.18s

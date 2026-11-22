@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 1,
+    "timer": "time.perf_counter_ns",
+    "repeats": 5,
+    "summary": "median of five independent runs after garbage collection",
+    "seed": 1904
+  },
+  "fifo_scaling": [
+    {
+      "n": 250,
+      "linked_queue_ms": 0.0824,
+      "python_list_fifo_ms": 0.0225
+    },
+    {
+      "n": 1000,
+      "linked_queue_ms": 0.3526,
+      "python_list_fifo_ms": 0.0925
+    },
+    {
+      "n": 4000,
+      "linked_queue_ms": 1.4234,
+      "python_list_fifo_ms": 0.925
+    },
+    {
+      "n": 16000,
+      "linked_queue_ms": 6.0389,
+      "python_list_fifo_ms": 15.275
+    }
+  ],
+  "priority_scaling": [
+    {
+      "n": 250,
+      "binary_heap_ms": 0.5712,
+      "sorted_list_ms": 0.2286
+    },
+    {
+      "n": 1000,
+      "binary_heap_ms": 3.0728,
+      "sorted_list_ms": 0.972
+    },
+    {
+      "n": 4000,
+      "binary_heap_ms": 16.2752,
+      "sorted_list_ms": 5.5549
+    },
+    {
+      "n": 16000,
+      "binary_heap_ms": 91.6699,
+      "sorted_list_ms": 52.17
+    }
+  ],
+  "sorting_scaling": [
+    {
+      "n": 100,
+      "insertion_sort_ms": 0.1894,
+      "merge_sort_ms": 0.1157
+    },
+    {
+      "n": 500,
+      "insertion_sort_ms": 5.2688,
+      "merge_sort_ms": 0.6451
+    },
+    {
+      "n": 1500,
+      "insertion_sort_ms": 54.0763,
+      "merge_sort_ms": 2.6409
+    }
+  ],
+  "memory_profile": {
+    "n": 5000,
+    "python_list_peak_bytes": 191952,
+    "linked_queue_peak_bytes": 391992,
+    "measurement": "tracemalloc peak traced Python allocations; one build per structure"
+  }
+}

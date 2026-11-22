@@ -1,0 +1,10 @@
+[project]
+name = "unit19-soc-alerts"
+version = "1.0.0"
+description = "Educational SOC alert-management backend using custom data structures"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["src"]
